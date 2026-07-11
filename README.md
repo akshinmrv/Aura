@@ -1,37 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Aura — a dark, glassmorphic product dashboard
 
-## Getting Started
+A premium dashboard interface built around a single idea: a calm, glass-and-void surface where
+data reads clearly and nothing shouts. Sidebar navigation, metric cards, and charts, composed on
+a considered design system rather than a component-library default.
 
-First, run the development server:
+**Live:** [aura-lime-one.vercel.app](https://aura-lime-one.vercel.app)
+
+<!-- Add a screenshot here — a dashboard sells on how it looks.
+<p align="center"><img src="./docs/preview.png" alt="Aura dashboard" width="100%"></p>
+-->
+
+## Design system
+
+Aura is built on its own tokens (see [`design.md`](./design.md)):
+
+- **Palette** — Void Black `#05050A`, Neon Indigo `#6366F1` → Violet `#8B5CF6`, Cyber Cyan `#06B6D4`
+- **Surfaces** — layered glass panels (`backdrop-blur`, hairline borders, soft shadow)
+- **Type** — Geist / Inter, tight tracking on headings
+- **Components** — glow buttons, metric cards, chart containers, active-state sidebar items
+
+## Stack
+
+- **Framework** — Next.js, TypeScript
+- **Styling** — Tailwind CSS (custom token layer)
+- **Charts** — Recharts
+- **Quality** — ESLint + Prettier
+- **Deploy** — Vercel
+
+## Running locally
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev        # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## License
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+© 2026 Akshin Miranov (Servoogle). All rights reserved. Published publicly as a **portfolio
+reference only** — not licensed for reuse. See [`LICENSE`](./LICENSE).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-"# Aura" 
+---
+Built by [Akshin Miranov](https://github.com/akshinmrv) under the Servoogle name — [servoogle.com](https://servoogle.com).
